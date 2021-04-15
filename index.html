@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;900&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"><link rel="stylesheet" href="css/styles.css">
+
+    <title></title>
+  </head>
+  <body>
+    <section id="title">
+
+    <div class="container-fluid" >
+
+
+
+    <nav class="navbar bg-dark navbar-expand-lg navbar-dark">
+
+    <a class="navbar-brand mx-auto" href="">IEEE RIT-B</a>
+     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+</nav>
+<br>
+
+
+
+<center>
+
+
+
+
+
+
+<div class="col-lg-8">
+          <div class="card bg-light border-dark">
+            <form method="post" action="//submit.form" onSubmit="return validateForm();">
+            <div style="max-width: 400px;">
+            </div>
+            <div style="padding-bottom: 18px;font-size : 24px;">Donate / Support Us</div>
+            <div style="display: flex; padding-bottom: 18px;max-width : 550px;">
+            <div style=" margin-left: 0; margin-right: 1%; width: 49%;">First name<br/>
+            <input type="text" id="data_2" name="data_2" style="max-width: 100%;" class="form-control"/>
+            </div>
+            <div style=" margin-left: 1%; margin-right: 0; width: 49%;">Last name<br/>
+            <input type="text" id="data_3" name="data_3" style="max-width: 100%;" class="form-control"/>
+            </div>
+            </div><div style="padding-bottom: 18px;">Email<br/>
+            <input type="text" id="data_4" name="data_4" style="max-width : 550px;" class="form-control"/>
+            </div>
+            <div style="padding-bottom: 18px;">Donation Amount<span style="color: red;"> *</span> : <input type="number" name="a" id="a"><br><br/>
+            </div>
+            <div style="padding-bottom: 18px;">Comments<br/>
+            <textarea id="data_6" false name="data_6" style="max-width : 550px;" rows="3" class="form-control"></textarea>
+            </div>
+            </form>
+  <div class="card-body">
+    <button class="btn btn-outline-dark" type="button" id="paymentclick" onclick="add(document.getElementById('a').value)">Pay</button>
+  </div>
+</div>
+
+        </div>
+        </center>
+
+
+  <script src="server.js" charset="utf-8"></script>
+
+  </body>
+</html>
