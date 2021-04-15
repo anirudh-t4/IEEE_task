@@ -1,18 +1,18 @@
-function add(a) {
+function add(a,data_2,data_3,data_4,data_6) {
 	var options = {
 		"key": "rzp_test_vII9dmNXP3Cab1",
 		"amount": a*100,
-		"name": "IEE RIT",
-		"description": "description",
+		"name": "IEEE RIT",
+		"description": data_6,
 		"image": "img/logo.png",
 		"handler": function (response) {
 			console.log(response);
 
 		},
 		"prefill": {
-			"name": "Anirudh",
-			"email": 'anirudh123321@gmail.com.COM',
-			"contact": '+919148397609'
+			"name": data_2+" "+data_3,
+			"email": 'anirudh123321@gmail.com',
+			"contact": data_4
 		},
 		"notes": {
 			"address": "address"

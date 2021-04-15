@@ -47,7 +47,7 @@
             <div style=" margin-left: 1%; margin-right: 0; width: 49%;">Last name<br/>
             <input type="text" id="data_3" name="data_3" style="max-width: 100%;" class="form-control"/>
             </div>
-            </div><div style="padding-bottom: 18px;">Email<br/>
+          </div><div style="padding-bottom: 18px;">Phone No.<br/>
             <input type="text" id="data_4" name="data_4" style="max-width : 550px;" class="form-control"/>
             </div>
             <div style="padding-bottom: 18px;">Donation Amount<span style="color: red;"> *</span> : <input type="number" name="a" id="a"><br><br/>
@@ -57,7 +57,7 @@
             </div>
             </form>
   <div class="card-body">
-    <button class="btn btn-outline-dark" type="button" id="paymentclick" onclick="add(document.getElementById('a').value)">Pay</button>
+    <button class="btn btn-outline-dark" type="button" id="paymentclick" onclick="add(document.getElementById('a').value,document.getElementById('data_2').value,document.getElementById('data_3').value,document.getElementById('data_4').value,document.getElementById('data_6').value)">Pay</button>
   </div>
 </div>
 
